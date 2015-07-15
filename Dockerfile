@@ -17,7 +17,7 @@ RUN rm -f /usr/bin/python && \
     echo alias python=/usr/autodesk/maya/bin/mayapy >> ~/.bashrc
 
 # Setup environment
-ENV MAYA_LOCATION=/usr/autodesk/maya2015-x64/
+ENV MAYA_LOCATION=/usr/autodesk/maya/
 ENV PATH=$MAYA_LOCATION/bin:$PATH
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
